@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAKE</title>
+
+    <!-- font hỗ trợ icon, glyphsearch.com -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Font chữ của google: font.google.com, chọn 3 loại kiểu 300-400-700 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- thư viện lightbox js cho phần gallery -->
+    <link rel="stylesheet" href="./css/lightbox.min.css">
+    <!-- thu viện owl carousel, trong phần asset, để thu viện chính phía dưới cùng -->
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="./css/owl.carousel.css">
+    
+
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+    <!-- navigation -->
+    <header>
+        <div class="header__content">
+            <p>BAKE</p>
+            <nav>
+                <ul id="mainNav">
+                    <li class="active"><a href="#carousel">HOME</a></li>
+                    <li><a href="#intro">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#gallery">GALLERY</a></li>
+                    <li><a href="#team">CLIENTS</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- carousel -->
+    <section class="carousel" id="carousel">
+        <div class="carousel__content">
+            <h1>Best Bake Here</h1>
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <button>LEARN MORE</button>
+        </div>
+    </section>
+    <!-- intro -->
+    <section class="intro" id="intro">
+        <!-- áp dụng kĩ thuật Grid, chia ô chia cột cho từng phần tử, tạo từng thẻ div con cho từng ô, làm dần từng hàng từ trái qua -->
+        <!-- Hàng 1 -->
+        <div class="intro__item">
+            <!-- tạo thẻ div trung gian để sử dụng căn giữa ngang dịc của flex, vì flex chỉ có 1 thẻ con trực tiếp bên trong-->
+            <div>
+                <h3>Tradition</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestiae! Tempore.</p>
+            </div>
+        </div>
+        <!-- vì hình hàng 1 cần chia nên đặt 1 class riêng -->
+        <div class="intro__item intro__ab1">
+            <img src="./img/ab1.jpg" alt="ab1">
+        </div>
+        <div class="intro__item">
+            <!-- tạo thẻ div trung gian để -->
+            <div>
+                <h3>Creativity</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestiae! Tempore.</p>
+            </div>
+        </div>
+        <!-- Hàng 2 -->
+        <!-- vì ô chữ đầu ở hàng 2 cần gom cột nên khai báo thẻ cha -->
+        <div class="intro__item intro__tr2">
+            <div>
+                <h3>What We Bake Best For You</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, ab. Velit consequatur sed
+                    accusamus praesentium rem, alias fugiat nisi sit.</p>
+            </div>
+        </div>
+        <div class="intro__item">
+            <img src="./img/ab2.jpg" alt="ab2">
+        </div>
+        <div class="intro__item">
+            <div>
+                <h3>Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestiae! Tempore.</p>
+            </div>
+        </div>
+        <!-- Hàng 3 -->
+        <div class="intro__item">
+            <img src="./img/ab3.jpg" alt="ab3">
+        </div>
+        <div class="intro__item">
+            <div>
+                <h3>Tasty Cakes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, molestiae! Tempore. Eum, molestiae!
+                    Tempore.</p>
+            </div>
+        </div>
+        <!-- ô hình cuối hàng 3 cần gom cột -->
+        <div class="intro__item intro__ab4">
+            <img src="./img/ab4.jpg" alt="ab4">
+        </div>
+    </section>
+    <!-- number -->
+    <section class="number">
+        <!-- áp dụng kĩ thuật flex nên có 1 thẻ con trực tiếp -->
+        <div class="number__content">
+            <div class="number__item">
+                <p>3500</p>
+                <p>coffee</p>
+            </div>
+            <div class="number__item">
+                <p>650</p>
+                <p>Happy Clients</p>
+            </div>
+            <div class="number__item">
+                <p>10</p>
+                <p>Experience</p>
+            </div>
+            <div class="number__item">
+                <p>110</p>
+                <p>Expert Worker</p>
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section class="services" id="services">
+        <h2>OUR SERVICES</h2>
+        <div class="services__content">
+            <div class="services__item">
+                <!-- thẻ icon -->
+                <div class="circle">
+                    <i class="fa fa-adjust"></i>
+                </div>
+                <h3>Tasty Cakes</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</p>
+                <button>Learn More</button>
+            </div>
+            <div class="services__item">
+                <div class="circle">
+                    <i class="fa fa-snowflake"></i>
+                </div>
+                <h3>Creativity</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</p>
+                <button>Learn More</button>
+            </div>
+            <div class="services__item">
+                <div class="circle">
+                    <i class="fa fa-chart-pie"></i>
+                </div>
+                <h3>Tradition</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</p>
+                <button>Learn More</button>
+            </div>
+            <div class="services__item">
+                <div class="circle">
+                    <i class="fa fa-users"></i>
+                </div>
+                <h3>Quality</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam</p>
+                <button>Learn More</button>
+            </div>
+    </section>
+    <!-- gallery -->
+    <section class="gallery" id="gallery">
+        <h2>our gallery</h2>
+        <div class="gallery__content">
+            <!-- thẻ figure chuyên dùng cho thẻ hình, giống thẻ div nhưng chuyên biệt cho phần hình. figcaption chuyên để chú thích cho phần hình giống như chú thích trong khunng tranh, sử dụng trong html5 -->
+            <figure class="gallery__item">
+                <!-- tạo thẻ a chứa đường dẫn của hình và thuộc tính data-lightbox được gọi ra từ thư viện js của lightbox và giá trị các thẻ data giống nhau để tạo nhiều hình có thể qua lại. Thẻ a này phải nằm trong figure, vì nó sẽ nằm đè lên figure -->
+                <a href="./img/g1.jpg" data-lightbox="gallery">
+                    <img src="./img/g1.jpg" alt="g1">
+                    <!-- lớp hover phía trên, đè lên hình nền -->
+                    <figcaption class="gallery__overlay">
+                        <h3><span>our</span>gallery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery__item">
+                <a href="./img/g2.jpg" data-lightbox="gallery">
+                    <img src="./img/g2.jpg" alt="g2.jpg">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>our</span>gallery</h3>
+                        <p>Lorem, ipsum dolor sit amet</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery__item">
+                <a href="./img/g3.jpg" data-lightbox="gallery">
+                    <img src="./img/g3.jpg" alt="g3.jpg">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>our</span>gallery</h3>
+                        <p>Lorem, ipsum dolor</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery__item">
+                <a href="./img/g4.jpg" data-lightbox="gallery">
+                    <img src="./img/g4.jpg" alt="g4.jpg">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>our</span>gallery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery__item">
+                <a href="./img/g5.jpg" data-lightbox="gallery">
+                    <img src="./img/g5.jpg" alt="g5.jpg">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>our</span>gallery</h3>
+                        <p>Lorem, ipsum dolor sit</p>
+                    </figcaption>
+                </a>
+            </figure>
+            <figure class="gallery__item">
+                <a href="./img/g6.jpg" data-lightbox="gallery">
+                    <img src="./img/g6.jpg" alt="g6.jpg">
+                    <figcaption class="gallery__overlay">
+                        <h3><span>our</span>gallery</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    </figcaption>
+                </a>
+            </figure>
+        </div>
+    </section>
+    <!-- team -->
+    <section class="team" id="team">
+        <h2>bake team</h2>
+        <div class="team__content">
+            <figure class="team__item">
+                <img src="./img/t1.jpg" alt="t1">
+                <div class="team__text">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                </div>
+                <figcaption class="team__overlay">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime consectetur
+                        reprehenderit culpa id doloribus rerum molestias nostrum</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </figcaption>
+            </figure>
+            <figure class="team__item">
+                <img src="./img/t2.jpg" alt="t2">
+                <div class="team__text">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                </div>
+                <figcaption class="team__overlay">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime consectetur
+                        reprehenderit culpa id doloribus rerum molestias nostrum</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </figcaption>
+            </figure>
+            <figure class="team__item">
+                <img src="./img/t3.jpg" alt="t3">
+                <div class="team__text">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                </div>
+                <figcaption class="team__overlay">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime consectetur
+                        reprehenderit culpa id doloribus rerum molestias nostrum</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </figcaption>
+            </figure>
+            <figure class="team__item">
+                <img src="./img/t4.jpg" alt="t4">
+                <div class="team__text">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                </div>
+                <figcaption class="team__overlay">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime consectetur
+                        reprehenderit culpa id doloribus rerum molestias nostrum</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </figcaption>
+            </figure>
+            <figure class="team__item">
+                <img src="./img/t1.jpg" alt="t1">
+                <div class="team__text">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                </div>
+                <figcaption class="team__overlay">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime consectetur
+                        reprehenderit culpa id doloribus rerum molestias nostrum</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </figcaption>
+            </figure>
+            <figure class="team__item">
+                <img src="./img/t2.jpg" alt="t2">
+                <div class="team__text">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                </div>
+                <figcaption class="team__overlay">
+                    <h3>John Simson</h3>
+                    <p>-Cake maker</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti maxime consectetur
+                        reprehenderit culpa id doloribus rerum molestias nostrum</p>
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-google-plus-g"></i>
+                    <i class="fab fa-twitter"></i>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <!-- testimonials -->
+    <section class="feedback">
+        <h2>testimonials</h2>
+        <div class="feedback__content">
+            <!-- các class owl và item lấy trong thư viện css của owl carousel -->
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        eaque officiis ea laboriosam ipsum quisquam recusandae enim voluptatum facilis aut. <i
+                            class="fa fa-quote-right"></i></p>
+                    <p>MARK</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        eaque officiis ea laboriosam ipsum quisquam recusandae enim voluptatum facilis aut. <i
+                            class="fa fa-quote-right"></i></p>
+                    <p>ALLY</p>
+                </div>
+                <div class="item">
+                    <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+                        eaque officiis ea laboriosam ipsum quisquam recusandae enim voluptatum facilis aut. <i
+                            class="fa fa-quote-right"></i></p>
+                    <p>WILLSON</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+    <section class="contact" id="contact">
+        <h2>contact</h2>
+        <div class="contact__content">
+            <!-- sử dụng kĩ thuật grid -->
+            <!-- thẻ form chứa input chỉ 1 hàng text -->
+            <form action="">
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Last name">
+                <input type="text" placeholder="Email">
+                <input type="text" placeholder="Phone">
+                <!-- thẻ textarea gõ được nhiều dòng text -->
+                <textarea type="text" placeholder="Message"></textarea>
+                <button>Send</button>
+            </form>
+        </div>
+        <div class="contact__map">
+            <!-- lấy địa chỉ bản đồ trong gg map, trong phần chia sẻ chọn nhúng bán đồ html -->
+            <!-- thẻ ifram là thẻ lấy của bên ngoài theo thư viện của gg -->
+            <!-- lấy video nhúng vô web cũng tương tự. vô phần chia sẻ và chọn nhúng, coppy ifram dán vô web -->
+            <!-- chỉnh sửa kích thước thẳng vô thuộc tính style hoặc trong css -->
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3918.943040160283!2d106.77255271407122!3d10.81567106142733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x317527e1b7f3c91b%3A0x9b4f63e977664ca!2zNTIzYSDEkCDEkOG7lyBYdcOibiBI4bujcCwgUGjGsOG7m2MgTG9uZyBCLCBRdeG6rW4gOSwgVGjDoG5oIHBo4buRIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1651945307459!5m2!1svi!2s"
+                width="100%" height="450" style="border:0; margin: 50px 0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact__info">
+            <div class="info__item">
+                <i class="fa fa-home"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info__item">
+                <i class="fa fa-phone"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="info__item">
+                <i class="fa fa-envelope"></i>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <!-- sử dụng kĩ thuật flex căn ngang các thành phần -->
+        <div class="footer__content">
+            <div class="footer__item">
+                <h3>About Us</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit, exercitationem eligendi.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis.</p>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-google-plus-g"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+            <div class="footer__item">
+                <h3>Working Time</h3>
+                <div class="item__time">
+                    <p>Monday</p>
+                    <p>9h30 -18h30</p>
+                </div>
+                <div class="item__time">
+                    <p>Tuesday</p>
+                    <p>9h30 -18h30</p>
+                </div>
+                <div class="item__time">
+                    <p>Wednesday</p>
+                    <p>9h30 -18h30</p>
+                </div>
+                <div class="item__time">
+                    <p>Thursday</p>
+                    <p>9h30 -18h30</p>
+                </div>
+                <div class="item__time">
+                    <p>Friday</p>
+                    <p>9h30 -18h30</p>
+                </div>
+                <div class="item__time">
+                    <p>Saturday</p>
+                    <p>9h30 -18h30</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3>Twitter Us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+                <p>Lorem ipsum dolor sit amet consectetur.</p>
+            </div>
+            <div class="footer__item">
+                <h3>SUBSCRIBE US</h3>
+                <input type="text" placeholder="name@example.com">
+                <button>Send</button>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam recusandae dignissimos earum illum,
+                    nostrum nisi veniam?</p>
+            </div>
+        </div>
+        <div class="footer__coppyright">
+            <!-- sử dụng mã asscii để tạo kí tự đặc biệt -->
+            <p>© 2020 Lorem ipsum dolor sit amet | Design By <span>Huu Tuan</span></p>
+        </div>
+    </footer>
+
+    <!-- back to top -->
+    <!-- add class thêm trong thư viện js -->
+    <a href="" class="backtotop cd-top text-replace js-cd-top">
+        <!-- search angle -->
+        <i class="fa fa-angle-double-up"></i>
+    </a>
+
+    <!-- JS -->
+    <!-- file cdn jquery, đây là thư viện jquery chạy hiệu ứng cho các thư viện animation -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!-- cdn jquery waypoints -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/3.0.0/noframework.waypoints.min.js"></script>
+
+    <!-- lightbox js -->
+    <script src="./js/lightbox.min.js"></script>
+
+    <!-- owl carousel -->
+    <!-- ngoài thư viện owl carousel còn có thư viện slick, ngoài ra còn thư viện swiper có nhiều hiệu ứng chuyển động đặc biệt hơn -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <!-- đoạn code internal để inport vô -->
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            // margin là khoảng cách của từng phần tử item, nhung chỉ hiện 1 phần thủ item nên margin k cần thiết
+            // margin: 10,
+            // nav là 2 mũi tên phía dưới trái phải, không cần thì set false
+            nav: false,
+            // responsive: {
+            //     // từ 0-> 600px xuất hiện 1 item
+            //     0: {
+            //         items: 1
+            //     },
+            //     // từ 600-1000px xuất hiện 3 item 
+            //     600: {
+            //         items: 3
+            //     },
+            //     // 1000px xuất hiện 5 item
+            //     1000: {
+            //         items: 5
+            //     }
+            // }
+            // muốn hiệu ứng tự chuyển động qua lại thì trong thư viện vó hỗ trợ nhiều hiệu ứng, vô phần document vào optione của thư viện để xem chi tiết, autoplay hỗ trợ chuyển động qua lại
+            autoplay: true,
+            // tự động pause khi đưa chuột vô
+            autoplayHoverPause: true,
+            responsive: {
+                // bất kể kích thước màn hình nào cũng hiện 1item
+                // lớn hơn 0 xuất hiện 1 item
+                0: {
+                    items: 1
+                },
+            }
+        })
+    </script>
+    <!-- thư viện backtotop -->
+    <script src="./js/util.js"></script>
+    <script src="./js/main-backtotop.js"></script>
+    
+    <!-- đưa file css và file min.js vô file folder -->
+
+    <!-- làm hiệu ứng để khi ấn vô mục nào thì hover sẽ hiện ỏ mục đó, ý tưởng sẽ xóa active của home để thêm active cho các mục khác, phải sử dụng jvs -->
+    <script>
+        // gọi cấu trúc thẻ cha ul dựa vô id mainNav
+        var mainNav = document.getElementById("mainNav");
+        // gọi cấu trúc thẻ con li theo cấu trúc mảng
+        var listNav = mainNav.getElementsByTagName("li");
+        // kiểm tra từng thẻ li của chúng ta có được click hay k, sử dụng hàm for để duyệt mảng, quét theo chiều dài của thẻ li
+        for (i=0 ; i < listNav.length ; i++)
+        {
+            // gọi item từng mảng, i là vị trí item của mảng
+            listNav[i].addEventListener("click",function()
+            {
+                // quét xem thẻ nào đang được gắn active cần xóa
+                var current = document.querySelector("#mainNav .active");
+                // xóa cái được gắn active, lấy tất cả các classname đang được gắn active để xét cho thành rỗng
+                current.className = current.className.replace("active","");
+                // gọi thẻ hiện tại đang được click để thêm active, nhưng nếu không có dấu + sẽ làm cho các active khai báo cho mảng khác cũng bị xét thành rỗng, nên phải thêm dấu cộng để nối thêm active vào cho thẻ được click chứ không thay thế toàn bộ. 
+                // ví dụ class cũ sẽ không thay thế bằng active mà chỉ cộng thêm active vô 
+                this.className += "active";  
+            });
+        }
+    </script>
+</body>
+
+</html>
